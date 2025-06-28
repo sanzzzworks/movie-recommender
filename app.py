@@ -58,6 +58,57 @@ import pickle
 import streamlit as st
 import requests
 
+st.markdown("""
+    <style>
+        /* 🔵 App background & text */
+        .stApp {
+            background-color: #87CEEB;
+            color: black;
+        }
+
+        /* 📝 General text */
+        h1, h2, h3, h4, h5, h6, p, label, span, div {
+            color: black !important;
+        }
+
+        /* 🔘 Button */
+        .stButton > button {
+            background-color: white;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 16px;
+        }
+        .stButton > button:hover {
+            background-color: #87CEEB ;
+        }
+
+        /* ⬇️ Selectbox */
+        .stSelectbox > div[data-baseweb="select"] {
+            background-color: white !important;
+            color: black !important;
+            border-radius: 5px;
+        }
+
+        /* 🔽 Dropdown items */
+        div[role="listbox"] {
+            background-color: white !important;
+            color: black !important;
+        }
+
+        /* 🧾 Text inputs (if any) */
+        input[type="text"] {
+            background-color: white !important;
+            color: black !important;
+        }
+
+        /* Placeholder text */
+        ::placeholder {
+            color: gray !important;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 # Safely fetch poster
 def fetch_poster(movie_id):
     url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=aa069f1b664ca9098eaff1ad93535e5e&language=en-US"
