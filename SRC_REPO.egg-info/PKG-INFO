@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: SRC-REPO
+Version: 0.0.1
+Summary: a small example package for movies recommendation
+Author: SANJAY
+Author-email: sanjay2006india@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
